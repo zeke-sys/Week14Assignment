@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: grey;
 }
 
 .App-logo {
@@ -35,4 +36,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h2 {
+  color: greenyellow;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  border-radius: 3rem;
+}
+
+.cardBox:hover .cardText {
+  opacity: 1;
+}
+
+.cardImg {
+  max-height: 450px;
+  min-height: 450px;
+  border-radius: .65rem;
+}
+
+.navBar {
+  background-color: black;
+  text-align: left;
+}
+
+.card {
+  border-radius: 2rem;
+  padding-top: 1px;
+  background-color: gray;
+  padding-bottom: 20px;
+  width: 320px;
+  margin: 2rem 1rem;
+}
+
+.reviewBtn {
+  height: 30px;
+  width: 200px;
+  margin-top: 20px;
 }

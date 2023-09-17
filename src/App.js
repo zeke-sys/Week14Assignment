@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import movieData from './components/Movie';
+import MovieData from './components/MovieList';
 
 function App() {
+  const movieList = movieData.map(movie => {
+    return (
+      <MovieData
+        key={movie.id}
+        movie={movie} />
+    )
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h2>Movie Reviews</h2>
+        <section className='card-container'>{movieList}</section>
+      </div>
     </div>
   );
 }
